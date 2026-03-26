@@ -9,7 +9,7 @@
 
 > **Automated threat intelligence & attack surface mapping. Enter a domain to begin reconnaissance.**
 
-ThreatLens is a custom-built, full-stack threat intelligence platform developed and deployed on Kali Linux. It automates domain reconnaissance, surface mapping, and security header analysis and generates structured AI-powered findings reports with risk scoring and PDF export.
+ThreatLens is a custom-built, full-stack threat intelligence platform developed and deployed on Kali Linux. It automates domain reconnaissance, surface mapping and security header analysis and generates structured AI-powered findings reports with risk scoring and PDF export.
 
 ---
 
@@ -39,7 +39,7 @@ ThreatLens was built to demonstrate dual competency: **security tool development
 - Accepts a domain as input and runs an automated multi-vector scan
 - Enumerates URLs and maps the visible attack surface
 - Detects missing security headers and known vulnerability patterns
-- Enriches results with domain registration, hosting, and ASN data
+- Enriches results with domain registration, hosting and ASN data
 - Classifies findings by severity: Critical · High · Medium · Low
 - Generates AI Analyst findings with structured remediation guidance
 - Exports full PDF reports and exposes raw JSON scan data
@@ -80,6 +80,7 @@ Before installing, ensure the following are available on your Kali Linux machine
   sudo apt install git -y
   ```
 - **Node.js** (optional fallback) — v18+ recommended
+
 - A modern browser (Firefox on Kali works out of the box)
 
 ---
@@ -98,6 +99,7 @@ cd aegis-intel-scan-main
 Or if downloaded as a ZIP, extract and navigate in:
 
 ```bash
+
 cd ~/Downloads/aegis-intel-scan-main
 ```
 
@@ -122,6 +124,7 @@ bun install
 
 ```
 [48.53ms] ".env"
+
 bun install v1.3.10 (30e609e0)
 
 + @eslint/js@9.32.0
@@ -139,6 +142,7 @@ bun install v1.3.10 (30e609e0)
 ...
 
 538 packages installed [11.64s]
+
 Blocked 2 postinstalls. Run `bun pm untrusted` for details.
 ```
 <img width="1038" height="563" alt="2a" src="https://github.com/user-attachments/assets/d39b66b6-627f-49e1-8089-c75c10021209" />
@@ -152,6 +156,7 @@ Blocked 2 postinstalls. Run `bun pm untrusted` for details.
 ### Step 4 - Start the Development Server
 
 ```bash
+
 bun run dev
 ```
 
